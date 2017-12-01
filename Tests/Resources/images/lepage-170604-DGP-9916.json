@@ -1,0 +1,37 @@
+{
+  "filename" : "lepage-170604-DGP-9916.jpg",
+  "folder" : "images",
+  "image_w_h" : [
+    4928,
+    3280
+  ],
+  "objects" : [
+    {
+      "label" : "carconenumber-1",
+      "x_y_w_h" : [
+        2287,
+        1865,
+        391,
+        235
+      ]
+    },
+    {
+      "label" : "camera-camera",
+      "x_y_w_h" : [
+        2304,
+        788,
+        377,
+        322
+      ]
+    },
+    {
+      "label" : "car-bottom-front-1",
+      "x_y_w_h" : [
+        570,
+        770,
+        3782,
+        2347
+      ]
+    }
+  ]
+}

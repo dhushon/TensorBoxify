@@ -1,0 +1,36 @@
+<annotation>
+    <folder>images</folder>
+    <filename>lepage-170604-DGP-9916.jpg</filename>
+    <size>
+        <width>4928</width>
+        <height>3280</height>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>carconenumber-1</name>
+        <bndbox>
+            <xmin>2287</xmin>
+            <ymin>1865</ymin>
+            <xmax>2677</xmax>
+            <ymax>2099</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>camera-camera</name>
+        <bndbox>
+            <xmin>2304</xmin>
+            <ymin>788</ymin>
+            <xmax>2680</xmax>
+            <ymax>1109</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>car-bottom-front-1</name>
+        <bndbox>
+            <xmin>570</xmin>
+            <ymin>770</ymin>
+            <xmax>4351</xmax>
+            <ymax>3116</ymax>
+        </bndbox>
+    </object>
+</annotation>
