@@ -13,6 +13,7 @@ import XCTest
 
 class LBVOCJSONParserTest: XCTestCase {
     
+    let path = ["]
     let file = ["lepage-170604-DGP-9916"]
     let type = "json"
     var vocs : VOCElementSet? = nil

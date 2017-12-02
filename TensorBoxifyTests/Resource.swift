@@ -8,10 +8,12 @@
 import Foundation
 
 class Resource {
+    
     static var resourcePath = "./Resources"
     
     let name: String
     let type: String
+    let prefix = "images/"
     
     init(name: String, type: String) {
         self.name = name
@@ -27,7 +29,11 @@ class Resource {
     }
     
     var url: URL {
-        let url: URL? = Bundle(for: Swift.type(of: self)).url(forResource: name, withExtension: type)
+        //let currentBundle = Bundle.allBundles.filter() { $0.bundlePath.hasSuffix(".xctest") }.first!
+        //let realBundle = Bundle(path: "\(currentBundle.bundlePath)/../../../../Tests/MyProjectTests/Resources")
+        let any = Bundle(for: Swift.type(of: self))
+        let path = any.bundlePath
+        let url: URL? = Bundle(for: Swift.type(of: self)).url(forResource: (prefix+name), withExtension: type)
         if (url != nil) {
             return url!
         } else {
