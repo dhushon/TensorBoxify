@@ -14,14 +14,40 @@ class HttpServerManager  {
     class var sharedManager : HttpServerManager {
         return sharedInstance
     }
-    lazy let server = HttpServer()
     
-    init() {
+    enum ServerState {
+        case started
+        case stopped
+    }
+    lazy private var serverState = ServerState.stopped
+    
+    lazy var server = HttpServer()
+    var publicDir: String = "/tmp" {
+        didSet {
+            server["/public/:path"] = shareFilesFromDirectory(publicDir)
+            // TODO: determine if the publicDir setting requires a restart
+            startServer() // restart the web server given the new details
+        }
+    }
+    
+    private func startServer() {
+        do {
+            if (serverState == ServerState.started) {
+                server.stop()
+                serverState = ServerState.stopped
+            }
+            try server.start()
+            serverState = ServerState.started
+        } catch {
+            debugPrint("HTTPServerManager:",error)
+        }
+    }
+    
+    private init() {
         server["/public/:path"] = shareFilesFromDirectory(publicDir)
         server["/files/:path"] = directoryBrowser("/")
         server["/magic"] = { .ok(.html("You asked for " + $0.path)) }
-        server.start()
+        startServer()
     }
-    
     
 }
