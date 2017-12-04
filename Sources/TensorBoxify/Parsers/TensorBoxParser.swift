@@ -186,9 +186,9 @@ public class TensorBoxParser: VOCParser {
         }
     }
     
-    func translate(voc: VOCElementSet?) -> TensorBoxElementSet? {
+    func translate(voc: VOCElementSet) -> TensorBoxElementSet? {
         var tbes: [TensorBoxElement] = []
-        voc?.images.forEach { image in
+        voc.images.forEach { image in
             let id: Int = Int(arc4random_uniform(32784))
             let imagePath: String = concatFilename(folder: image.folder, file: image.filename)
             var rects: [TensorBoxRect] = []
@@ -204,13 +204,15 @@ public class TensorBoxParser: VOCParser {
         return TensorBoxElementSet(tb: tbes)
     }
     
-    func encode(url: URL, voc: VOCElementSet?) throws {
+    func encode(url: URL, voc: VOCElementSet) throws {
         print("writing to : \(url)")
-        let tbes = translate(voc: voc)
+        guard let tbes = translate(voc: voc) else {
+            throw VOCParserError.encodeError(desc: "TensorBoxParser: could not translate LBVOC to TB")
+        }
         try encode(url: url, tbes: tbes)
     }
     
-    func encode(url: URL, tbes: TensorBoxElementSet?) throws {
+    func encode(url: URL, tbes: TensorBoxElementSet) throws {
         print("writing to : \(url)")
         do {
             let encoder = JSONEncoder()

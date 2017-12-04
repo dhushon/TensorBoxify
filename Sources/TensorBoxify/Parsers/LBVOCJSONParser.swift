@@ -74,7 +74,7 @@ public class LBVOCJSONParser: VOCParser {
         throw VOCParserError.fileError(desc: "Couldn't parse URL")
     }
     
-    func encode(url: URL, voc: VOCElementSet?) throws {
+    func encode(url: URL, voc: VOCElementSet) throws {
         //http://benscheirman.com/2017/06/ultimate-guide-to-json-parsing-with-swift-4/
         print("writing to : \(url)")
         do {
@@ -87,9 +87,9 @@ public class LBVOCJSONParser: VOCParser {
         }
     }
     
-    func translate(tbes: TensorBoxElementSet?) -> VOCElementSet? {
+    func translate(tbes: TensorBoxElementSet) -> VOCElementSet {
         var voca: [VOCElement] = []
-        tbes?.images.forEach { image in
+        tbes.images.forEach { image in
             let folder: String = extractFolder(name: image.imagePath)
             let filename: String = extractFilename(name: image.imagePath)
             // todo: read image and derive dimensions
@@ -108,7 +108,7 @@ public class LBVOCJSONParser: VOCParser {
     }
     
     
-    func encode(url: URL, tbes: TensorBoxElementSet?) throws {
+    func encode(url: URL, tbes: TensorBoxElementSet) throws {
         try encode(url: url, voc: translate(tbes: tbes))
         return
     }

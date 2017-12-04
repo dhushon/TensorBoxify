@@ -30,16 +30,20 @@ class HttpServerManager  {
         }
     }
     
-    private func startServer() {
+    func startServer() {
         do {
-            if (serverState == ServerState.started) {
-                server.stop()
-                serverState = ServerState.stopped
-            }
+            stopServer()
             try server.start()
             serverState = ServerState.started
         } catch {
             debugPrint("HTTPServerManager:",error)
+        }
+    }
+    
+    func stopServer() {
+        if (serverState == ServerState.started) {
+            server.stop()
+            serverState = ServerState.stopped
         }
     }
     

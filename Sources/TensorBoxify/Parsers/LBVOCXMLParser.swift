@@ -256,12 +256,12 @@ class LBVOCXMLParser: VOCParser {
         return
     }
     
-    public func encode(url: URL, voc: VOCElementSet?) throws {
+    public func encode(url: URL, voc: VOCElementSet) throws {
         // open the file
         if (url.isFileURL) {
             //writing
             do {
-                let xml: String? = voc?.encodeXML()
+                let xml: String? = voc.encodeXML()
                 print("\(String(describing: xml))")
                 print("\n")
                 //try text.write(to: url, atomically: false, encoding: .utf8)
@@ -272,7 +272,7 @@ class LBVOCXMLParser: VOCParser {
         }
     }
     
-    public func encode(url: URL, tbes: TensorBoxElementSet?) throws {
+    public func encode(url: URL, tbes: TensorBoxElementSet) throws {
         // open the file
         if (url.isFileURL) {
             //writing
