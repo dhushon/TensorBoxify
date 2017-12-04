@@ -18,14 +18,12 @@ class TensorBoxParserTest: XCTestCase {
     let type = "json"
     var tbElementSet: TensorBoxElementSet? = nil
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    static var allTests = [
+        ("decodeTBJSONv1", testTensorBoxDecoderv1),
+        ("decodeTBJSONv2", testTensorBoxDecoderv2),
+        ("encodeTBJSON", testTensorBoxEncoder),
+        ("encodeTB2VOCJSON", testVOCEncoder)
+    ]
     
     func testTensorBoxDecoderv2() {
         // get url (check that bundle includes necessary JSON)
@@ -71,8 +69,10 @@ class TensorBoxParserTest: XCTestCase {
             XCTAssertTrue(tbp?.tensorBoxElementSet?.images.count == 2)
             do {
                 //now do the encode
-                let tbset = tbp?.tensorBoxElementSet
-                print("here")
+                guard let tbset = tbp?.tensorBoxElementSet else {
+                    XCTAssertTrue(false, "Could not parse \(jsonURL) into a TensorBox Structure")
+                    return
+                }
                 let jsonoutURL = Resource(name: String(file2[0]+"tbenc"), type: type).url
                 try tbp?.encode(url: jsonoutURL, tbes: tbset)
                 // check to see that the document was produced
@@ -92,26 +92,16 @@ class TensorBoxParserTest: XCTestCase {
         // get a VOCElementSet from other test routine
         let vocjsonParser = LBVOCJSONParserTest()
         vocjsonParser.testJSONDecoder()
-        guard let voca = try vocjsonParser.getVOCElementSet() else {
+        guard let voca = vocjsonParser.getVOCElementSet() else {
             XCTAssertTrue(false, "TensorBoxDecoderTest.testVOCEncoder(): couldn't get a VOCElementSet Reference")
             return
         }
         let jsonURL = Resource(name: file2[0]+"venc", type: type).url
         print("encoded to: \(jsonURL)")
-        do {
-            let tbp = try TensorBoxParser() // just use the decoder - so use the default initializer
+        XCTAssertNoThrow({
+            let tbp = TensorBoxParser() // just use the decoder - so use the default initializer
             try tbp.encode(url: jsonURL, voc: voca)
-            print("completed encoding")
-        } catch {
-            print("TensorBoxDecoderTest.testVOCEncoder: failed - \(error)")
-        }
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        })
     }
     
     func getTBElementSet() -> TensorBoxElementSet? {

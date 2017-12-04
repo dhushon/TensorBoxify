@@ -15,26 +15,21 @@ class LBVOCXMLDecoderTest: XCTestCase {
     let file = ["lepage-170604-DGP-9916"]
     let type = "xml"
     
-    override func setUp() {
-        super.setUp()
-    }
+    static var allTests = [
+        ("decodeVOCXML", testXMLDecoder)
+    ]
     
-    func testXMLParser() {
+    func testXMLDecoder() {
         let url = Resource(name: file[0], type: type).url
         try XCTAssertTrue(url.checkResourceIsReachable())
-        print("XMLURL: \(String(describing: url)) is reachable")
-        
-        do {
+        XCTAssertNoThrow({
             let parser : LBVOCXMLParser = LBVOCXMLParser()
             try parser.decode(url: url)
             let voc: VOCElementSet? = parser.getParsed()
             XCTAssertNotNil(voc)
             let image = voc!.images[0]
             XCTAssertTrue(image.objects.count == 3)
-        } catch {
-            print("Caught Error: \(error)")
-        }
-        print("XMLParse: successfully parsed objects")
+        },"XMLDecoder threw error")
     }
     
     func testPerformanceExample() {

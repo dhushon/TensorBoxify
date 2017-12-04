@@ -18,14 +18,10 @@ class LBVOCJSONParserTest: XCTestCase {
     let type = "json"
     var vocs : VOCElementSet? = nil
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    static var allTests = [
+        ("decodeVOCJSON", testJSONDecoder),
+        ("encodeVOCJSON", testJSONEncoder)
+    ]
     
     func testJSONDecoder() {
         // get url (check that bundle includes necessary JSON)
@@ -35,41 +31,30 @@ class LBVOCJSONParserTest: XCTestCase {
         
         // parse json file identified
         let parser = LBVOCJSONParser()
-        do {
+        XCTAssertNoThrow({
             let _ = try parser.decode(url: jsonURL)
             let voc: VOCElementSet? = parser.getParsed()
             XCTAssertNotNil(voc)
             self.vocs = voc
             let image = voc!.images[0]
             XCTAssertTrue(image.objects.count == 3)
-        } catch {
-            print("Caught Error: \(error)")
-        }
-        print("JSONParse: successfully parsed objects")
+        })
     }
     
     func testJSONEncoder() {
         testJSONDecoder()
         let jsonURL = Resource(name: file[0], type: type).url
-        do {
-            let tbp = LBVOCJSONParser()
-            try tbp.encode(url: jsonURL,voc: vocs)
-            print("JSONParser.encoder successfully encoded objects")
-        } catch {
-            print("VOCJSONDecoderTest.testJSONEncoder: \(error)")
-            XCTAssertFalse(true)
+        guard let voc : VOCElementSet = vocs else {
+            XCTAssert(false, "VOC set cannot be nil for test")
+            return
         }
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        XCTAssertNoThrow({
+            let parser = LBVOCJSONParser()
+            try parser.encode(url: jsonURL,voc: voc)
+        })
     }
     
     func getVOCElementSet() -> VOCElementSet? {
         return vocs
     }
-    
 }
