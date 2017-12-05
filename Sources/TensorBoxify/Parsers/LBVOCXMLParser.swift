@@ -153,7 +153,7 @@ extension VOCElement {
         case objects = "objects"
     }
     
-    func encodeXML() -> String? {
+    func encodeXML() -> String {
         //open
         var xmls = "<\(VOCElementSet.CodingKeysXML.image.rawValue)>\n"
         //children
@@ -182,7 +182,7 @@ extension Object {
         }
     }
     
-    func encodeXML() -> String? {
+    func encodeXML() -> String {
         
         //open
         var xmls = "<\(VOCElement.CodingKeysXML.object.rawValue)>\n"
@@ -216,7 +216,7 @@ extension BoundingBox {
         }
     }
     
-    func encodeXML() -> String? {
+    func encodeXML() -> String {
         
         //open
         var xmls = "<\(Object.CodingKeysXML.bndbox.rawValue)>\n"
@@ -235,11 +235,11 @@ class LBVOCXMLParser: VOCParser {
     
     var vocElementSet: VOCElementSet?
     
-    public func decode(url: URL) throws
+    public func decode(data: Data) throws
     {
         // initializer for next document?
         do {
-            let parser: XMLDictionaryParser? = try XMLDictionaryParser(contentsOf:(url as URL))
+            let parser: XMLDictionaryParser? = try XMLDictionaryParser(data: data)
             let xmlDict = (parser?.getDict())!["root"]!
             let data = try JSONSerialization.data(withJSONObject: xmlDict)
             let decoder = JSONDecoder(context: VersionContext(responseType: "xml"))
@@ -256,43 +256,16 @@ class LBVOCXMLParser: VOCParser {
         return
     }
     
-    public func encode(url: URL, voc: VOCElementSet) throws {
+    public func encode(voc: VOCElementSet) throws -> Data{
         // open the file
-        if (url.isFileURL) {
-            //writing
-            do {
-                let xml: String? = voc.encodeXML()
-                print("\(String(describing: xml))")
-                print("\n")
-                //try text.write(to: url, atomically: false, encoding: .utf8)
-            }
-            catch {/* error handling here */}
-        } else {
-            throw VOCParserError.fileError(desc: "http posts not supported")
-        }
+        let xml = voc.encodeXML()
+        let data:Data = xml!.data(using: String.Encoding.utf8)!
+        return data
     }
     
-    public func encode(url: URL, tbes: TensorBoxElementSet) throws {
-        // open the file
-        if (url.isFileURL) {
-            //writing
-            do {
-                //let xml: String? = tbes?.encodeXML()
-                //print("\(xml)"
-                
-                //try text.write(to: url, atomically: false, encoding: .utf8)
-            }
-            catch {
-                /* error handling here */
-            }
-        } else {
-            throw VOCParserError.fileError(desc: "http posts not supported")
-        }
-    }
-    
-    public func encode(outStream: OutputStream, voc: VOCElement?) {
-        //outStream!.scheduleInRunLoop(.mainRunLoop(), forMode: NSDefaultRunLoopMode)
-        
+    public func encode(tbes: TensorBoxElementSet) throws -> Data {
+        // TODO: Reverse translation from TBES to VOCXML
+        throw VOCParserError.encodeError(desc: "encoding a TensorBoxVOC to XML is not yet supported")
     }
     
     func getParsed() -> VOCElementSet? {

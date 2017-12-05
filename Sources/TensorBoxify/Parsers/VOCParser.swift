@@ -8,9 +8,9 @@
 import Foundation
 
 protocol VOCParser {
-    func decode(url: URL) throws
-    func encode(url: URL, voc: VOCElementSet) throws
-    func encode(url: URL, tbes: TensorBoxElementSet) throws
+    func decode(data: Data) throws
+    func encode(voc: VOCElementSet) throws -> Data
+    func encode(tbes: TensorBoxElementSet) throws -> Data
 }
 
 enum VOCParserError: Error {

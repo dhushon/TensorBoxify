@@ -49,42 +49,29 @@ import Foundation
 
 public class LBVOCJSONParser: VOCParser {
     
+    
     var vocElementSet: VOCElementSet? = nil
     
-    func decode(url: URL) throws {
-        if url.isFileURL {
-            do {
-                let data = try Data(contentsOf: url, options: .alwaysMapped)
-                let decoder = JSONDecoder(context: VersionContext(responseType: "json"))
-                do {
-                    let vocArray: [VOCElement] = try decoder.decode([VOCElement].self, from: data)
-                    vocElementSet = VOCElementSet(images: vocArray)
-                    return
-                } catch {
-                    // try singleton
-                    let vocArray = [try decoder.decode(VOCElement.self, from: data)]
-                    vocElementSet = VOCElementSet(images: vocArray)
-                    return
-                }
-            } catch {
-                print("Couldn't parse file \(error)")
-                throw VOCParserError.decodeError(desc: "Couldn't parse JSON \(error)")
-            }
+    func decode(data: Data) throws {
+        
+        let decoder = JSONDecoder(context: VersionContext(responseType: "json"))
+        do {
+            let vocArray: [VOCElement] = try decoder.decode([VOCElement].self, from: data)
+            vocElementSet = VOCElementSet(images: vocArray)
+            return
+        } catch {
+            // try singleton
+            let vocArray = [try decoder.decode(VOCElement.self, from: data)]
+            vocElementSet = VOCElementSet(images: vocArray)
+            return
         }
-        throw VOCParserError.fileError(desc: "Couldn't parse URL")
     }
     
-    func encode(url: URL, voc: VOCElementSet) throws {
+    func encode(voc: VOCElementSet) throws -> Data {
         //http://benscheirman.com/2017/06/ultimate-guide-to-json-parsing-with-swift-4/
-        print("writing to : \(url)")
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
-            let data = try! encoder.encode(voc)
-            print(String(data: data, encoding: .utf8)!)
-        } catch {
-            print("TensorBoxJSON.encode: \(error)")
-        }
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        return try encoder.encode(voc)
     }
     
     func translate(tbes: TensorBoxElementSet) -> VOCElementSet {
@@ -108,9 +95,8 @@ public class LBVOCJSONParser: VOCParser {
     }
     
     
-    func encode(url: URL, tbes: TensorBoxElementSet) throws {
-        try encode(url: url, voc: translate(tbes: tbes))
-        return
+    func encode(tbes: TensorBoxElementSet) throws -> Data{
+        return try encode(voc: translate(tbes: tbes))
     }
     
     func getParsed() -> VOCElementSet? {

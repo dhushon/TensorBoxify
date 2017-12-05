@@ -125,8 +125,8 @@ class XMLDictionaryParser: NSObject, XMLParserDelegate {
     
     let arrayifyElements = false
     
-    init?(contentsOf: URL) throws {
-        parser = XMLParser(contentsOf: contentsOf)!
+    init?(data: Data) throws {
+        parser = XMLParser(data: data)
         super.init()
         parser.delegate = self
         parser.parse()

@@ -13,7 +13,8 @@ import XCTest
 
 class LBVOCJSONParserTest: XCTestCase {
     
-    let path = [""]
+    let VOCJSONFile : String  = "{\n\"filename\" : \"lepage-170604-DGP-9916.jpg\",\n\"folder\" : \"images\",\n\"image_w_h\" : [4928,3280],\n\"objects\" : [\n{\n\"label\" : \"carconenumber-1\",\n\"x_y_w_h\" : [\n2287,\n1865,\n391,\n235\n]\n},\n{\n\"label\" : \"camera-camera\",\n\"x_y_w_h\" : [\n2304,\n788,\n377,\n322\n]\n},\n{\n\"label\" : \"car-bottom-front-1\",\n\"x_y_w_h\" : [\n570,\n770,\n3782,\n2347\n]\n}\n]\n}"
+    
     let file = ["lepage-170604-DGP-9916"]
     let type = "json"
     var vocs : VOCElementSet? = nil
@@ -24,33 +25,32 @@ class LBVOCJSONParserTest: XCTestCase {
     ]
     
     func testJSONDecoder() {
-        // get url (check that bundle includes necessary JSON)
-        let jsonURL = Resource(name: file[0], type: type).url
-        try XCTAssertTrue((jsonURL.checkResourceIsReachable()))
-        print("JSONURL: \(String(describing: jsonURL)) is reachable")
-        
+        let data = self.VOCJSONFile.data(using: String.Encoding.utf8)
         // parse json file identified
         let parser = LBVOCJSONParser()
-        XCTAssertNoThrow({
-            let _ = try parser.decode(url: jsonURL)
+        do {
+            let _ = try parser.decode(data: data!)
             let voc: VOCElementSet? = parser.getParsed()
             XCTAssertNotNil(voc)
             self.vocs = voc
             let image = voc!.images[0]
             XCTAssertTrue(image.objects.count == 3)
-        })
+        } catch {
+            debugPrint("LBVOCJSONParser.decode", error)
+        }
     }
     
     func testJSONEncoder() {
         testJSONDecoder()
-        let jsonURL = Resource(name: file[0], type: type).url
         guard let voc : VOCElementSet = vocs else {
             XCTAssert(false, "VOC set cannot be nil for test")
             return
         }
         XCTAssertNoThrow({
             let parser = LBVOCJSONParser()
-            try parser.encode(url: jsonURL,voc: voc)
+            let data = try parser.encode(voc: voc)
+            //TODO:  test data
+            debugPrint(String(data: data, encoding: String.Encoding.utf8))
         })
     }
     

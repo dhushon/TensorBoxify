@@ -137,7 +137,7 @@ extension TensorBoxRect {
 }
 
 public class TensorBoxParser: VOCParser {
-    
+
     var version = 0
     public var tensorBoxElementSet: TensorBoxElementSet? = nil
     
@@ -145,44 +145,34 @@ public class TensorBoxParser: VOCParser {
         // default initializer
     }
     
-    init?(url: URL) throws {
-        _ = try decode(url: url)
+    init?(data: Data) throws {
+        _ = try decode(data: data)
     }
     
-    func decode(url: URL) throws {
-        if url.isFileURL {
-            do {
-                let data = try Data(contentsOf: url, options: .alwaysMapped)
-                let decoder = JSONDecoder(context: VersionContext(responseType: TBVersions.v1.rawValue))
-                do {
-                    //try decodev1
-                    let tensorBoxArray: [TensorBoxElement] = try decoder.decode([TensorBoxElement].self, from: data)
-                    let tensorBoxElementSet = TensorBoxElementSet(tb: tensorBoxArray)
-                    self.tensorBoxElementSet = tensorBoxElementSet
-                    print(String(describing:(tensorBoxElementSet)))
-                    return
-                } catch {
-                    debugPrint("Maybe not a v1 file trying v2?", error )
-                    // but don't throw until after we have tested next version
-                }
-                // try decode v2
-                do {
-                    // reset the decoder to use the version 2 Context Keys and strategies
-                    decoder.set(context: VersionContext(responseType: TBVersions.v2.rawValue))
-                    let tensorBoxElementSet = try decoder.decode(TensorBoxElementSet.self, from: data)
-                    self.tensorBoxElementSet = tensorBoxElementSet
-                    print(String(describing:(tensorBoxElementSet)))
-                    return
-                } catch {
-                    debugPrint("Couldn't decode file using v1 or v2:", error)
-                    throw VOCParserError.decodeError(desc: "Could not decode file: \(error)")
-                }
-            } catch {
-                print("Could not read file: \(error)")
-                throw VOCParserError.fileError(desc: "Could not read / mapped file: \(error)")
-            }
-        } else {
-            throw VOCParserError.fileError(desc: "either malcoded URL or missing file: \(url)")
+    func decode(data: Data) throws {
+        let decoder = JSONDecoder(context: VersionContext(responseType: TBVersions.v1.rawValue))
+        do {
+            //try decodev1
+            let tensorBoxArray: [TensorBoxElement] = try decoder.decode([TensorBoxElement].self, from: data)
+            let tensorBoxElementSet = TensorBoxElementSet(tb: tensorBoxArray)
+            self.tensorBoxElementSet = tensorBoxElementSet
+            print(String(describing:(tensorBoxElementSet)))
+            return
+        } catch {
+            debugPrint("Maybe not a v1 file trying v2?", error )
+            // but don't throw until after we have tested next version
+        }
+        // try decode v2
+        do {
+            // reset the decoder to use the version 2 Context Keys and strategies
+            decoder.set(context: VersionContext(responseType: TBVersions.v2.rawValue))
+            let tensorBoxElementSet = try decoder.decode(TensorBoxElementSet.self, from: data)
+            self.tensorBoxElementSet = tensorBoxElementSet
+            print(String(describing:(tensorBoxElementSet)))
+            return
+        } catch {
+            debugPrint("Couldn't decode file using v1 or v2:", error)
+            throw VOCParserError.decodeError(desc: "Could not decode file: \(error)")
         }
     }
     
@@ -204,30 +194,22 @@ public class TensorBoxParser: VOCParser {
         return TensorBoxElementSet(tb: tbes)
     }
     
-    func encode(url: URL, voc: VOCElementSet) throws {
-        print("writing to : \(url)")
+    func encode(voc: VOCElementSet) throws -> Data {
         guard let tbes = translate(voc: voc) else {
             throw VOCParserError.encodeError(desc: "TensorBoxParser: could not translate LBVOC to TB")
         }
-        try encode(url: url, tbes: tbes)
+        return try encode(tbes: tbes)
     }
     
-    func encode(url: URL, tbes: TensorBoxElementSet) throws {
-        print("writing to : \(url)")
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
-            if #available(OSX 10.13, *) {
-                encoder.outputFormatting = .sortedKeys
-            } else {
-                // Fallback on earlier versions
-            } // follow the lexicographical order
-            let data = try! encoder.encode(tbes)
-            print(String(data: data, encoding: .utf8)!)
-        } catch {
-            print("TensorBoxJSON.encode: \(error)")
-        }
-        return
+    func encode(tbes: TensorBoxElementSet) throws -> Data {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        if #available(OSX 10.13, *) {
+            encoder.outputFormatting = .sortedKeys
+        } else {
+            // Fallback on earlier versions
+        } // follow the lexicographical order
+        return try encoder.encode(tbes)
     }
     
     func getParsed() -> TensorBoxElementSet? {
