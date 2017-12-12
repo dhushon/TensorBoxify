@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/WebFiler.swift"
+            timestampString = "534718228.672847"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchWebFile(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.WebFiler.fetchWebFile(url: Foundation.URL) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/WebFiler.swift"
+                  timestampString = "534795230.998267"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxify.WebFiler.fetchWebFile(url: Foundation.URL) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/WebFiler.swift"
+                  timestampString = "534795231.044967"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "217">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/WebFiler.swift"
+            timestampString = "534718228.672931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchWebFile(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in TensorBoxifyTests.WebFiler.fetchWebFile(url: Foundation.URL) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/WebFiler.swift"
+                  timestampString = "534795231.003508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "925">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in TensorBoxify.WebFiler.fetchWebFile(url: Foundation.URL) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/WebFiler.swift"
+                  timestampString = "534795231.048064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "925">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/TensorBoxifyTests/LocalFilerTest.swift"
+            timestampString = "534795229.840453"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testNamedDirectory()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.LocalFilerTests.testNamedDirectory() -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Tests/TensorBoxifyTests/LocalFilerTest.swift"
+                  timestampString = "534795231.009304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "482">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #6 : @autoclosure () throws -&gt; Swift.Optional&lt;Foundation.URL&gt; in TensorBoxifyTests.LocalFilerTests.testNamedDirectory() -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Tests/TensorBoxifyTests/LocalFilerTest.swift"
+                  timestampString = "534795231.011727"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #7 : @autoclosure () -&gt; Swift.String in TensorBoxifyTests.LocalFilerTests.testNamedDirectory() -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Tests/TensorBoxifyTests/LocalFilerTest.swift"
+                  timestampString = "534795231.014745"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/LocalFiler.swift"
+            timestampString = "534795229.840549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "urlForDataStorage(filename:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.021394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "892">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxify.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.0513"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "892">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/LocalFiler.swift"
+            timestampString = "534795229.841046"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "urlForDataStorage(filename:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.026478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1194">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxify.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.054999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1194">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/LocalFiler.swift"
+            timestampString = "534795229.841399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "urlForDataStorage(filename:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.030339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "2321">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxify.LocalFiler.urlForDataStorage(filename: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.059187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "2321">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/LocalFiler.swift"
+            timestampString = "534795229.841725"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setNamedDirectory(key:dir:createIfNotExists:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TensorBoxifyTests.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.03363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TensorBoxify.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.062619"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/TensorBoxify/FileServices/LocalFiler.swift"
+            timestampString = "534795229.842032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "setNamedDirectory(key:dir:createIfNotExists:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxifyTests.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.036985"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TensorBoxifyTests.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxifyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.039819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TensorBoxify.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.065871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TensorBoxify.LocalFiler.setNamedDirectory(key: Swift.String, dir: Foundation.URL, createIfNotExists: Swift.Bool) throws -&gt; ()"
+                  moduleName = "TensorBoxify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dhushon/work/TensorBoxify/Sources/TensorBoxify/FileServices/LocalFiler.swift"
+                  timestampString = "534795231.06821"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

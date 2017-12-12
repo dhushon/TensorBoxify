@@ -50,7 +50,7 @@ class LBVOCJSONParserTest: XCTestCase {
             let parser = LBVOCJSONParser()
             let data = try parser.encode(voc: voc)
             //TODO:  test data
-            debugPrint(String(data: data, encoding: String.Encoding.utf8))
+            debugPrint(String(data: data, encoding: String.Encoding.utf8)!)
         })
     }
     

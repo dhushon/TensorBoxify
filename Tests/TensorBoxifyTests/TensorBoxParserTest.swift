@@ -67,7 +67,7 @@ class TensorBoxParserTest: XCTestCase {
                     return
                 }
                 let data = try tbp?.encode(tbes: tbset)
-                debugPrint(String(data: data!, encoding: String.Encoding.utf8))
+                debugPrint(String(data: data!, encoding: String.Encoding.utf8)!)
                 // check to see that the document was produced
                 XCTAssertTrue(true)
                 print("JSONParser.encoder successfully encoded objects")
@@ -92,7 +92,7 @@ class TensorBoxParserTest: XCTestCase {
         XCTAssertNoThrow({
             let tbp = TensorBoxParser() // just use the decoder - so use the default initializer
             let data = try tbp.encode(voc: voca)
-            debugPrint(String(data: data, encoding: String.Encoding.utf8))
+            debugPrint(String(data: data, encoding: String.Encoding.utf8)!)
         })
     }
     

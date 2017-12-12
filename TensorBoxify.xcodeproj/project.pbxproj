@@ -1,0 +1,1437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"TensorBoxify::TensorBoxifyPackageTests::ProductTarget" /* TensorBoxifyPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_259 /* Build configuration list for PBXAggregateTarget "TensorBoxifyPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_262 /* PBXTargetDependency */,
+				OBJ_263 /* PBXTargetDependency */,
+			);
+			name = TensorBoxifyPackageTests;
+			productName = TensorBoxifyPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		95354D1D1FE04CB800864349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* ViewController.swift */; };
+		95354D1E1FE04CC300864349 /* LBVOCJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* LBVOCJSONParser.swift */; };
+		95354D1F1FE04CC300864349 /* LBVOCXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* LBVOCXMLParser.swift */; };
+		95354D201FE04CC300864349 /* TensorBoxParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* TensorBoxParser.swift */; };
+		95354D211FE04CC300864349 /* VOCParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* VOCParser.swift */; };
+		95354D221FE04CC300864349 /* VisualObjectClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* VisualObjectClass.swift */; };
+		95354D231FE04CC300864349 /* XMLDictionaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XMLDictionaryParser.swift */; };
+		95354D241FE04CCC00864349 /* TBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TBImage.swift */; };
+		95354D251FE04CD300864349 /* GoogleDriveFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GoogleDriveFiler.swift */; };
+		95354D261FE04CD300864349 /* LocalFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LocalFiler.swift */; };
+		95354D271FE04CD300864349 /* WebFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WebFiler.swift */; };
+		95354D291FE04DA900864349 /* LocalFilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95354D281FE04DA900864349 /* LocalFilerTest.swift */; };
+		95354D2A1FE04DA900864349 /* LocalFilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95354D281FE04DA900864349 /* LocalFilerTest.swift */; };
+		OBJ_116 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_122 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Package.swift */; };
+		OBJ_128 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* Package.swift */; };
+		OBJ_134 /* FileProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* FileProviderTest.swift */; };
+		OBJ_135 /* HttpServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HttpServerManager.swift */; };
+		OBJ_136 /* HttpServerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* HttpServerManagerTest.swift */; };
+		OBJ_137 /* LBVOCJSONParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* LBVOCJSONParserTest.swift */; };
+		OBJ_138 /* LBVOCXMLParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* LBVOCXMLParserTest.swift */; };
+		OBJ_139 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Resource.swift */; };
+		OBJ_140 /* TensorBoxParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* TensorBoxParserTest.swift */; };
+		OBJ_141 /* TensorBoxifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* TensorBoxifyTests.swift */; };
+		OBJ_143 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Swifter::Swifter::Product" /* Swifter.framework */; };
+		OBJ_144 /* TensorBoxify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */; };
+		OBJ_153 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* DemoServer.swift */; };
+		OBJ_154 /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* Errno.swift */; };
+		OBJ_155 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* Files.swift */; };
+		OBJ_156 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* HttpParser.swift */; };
+		OBJ_157 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* HttpRequest.swift */; };
+		OBJ_158 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* HttpResponse.swift */; };
+		OBJ_159 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* HttpRouter.swift */; };
+		OBJ_160 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* HttpServer.swift */; };
+		OBJ_161 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* HttpServerIO.swift */; };
+		OBJ_162 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Process.swift */; };
+		OBJ_163 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Scopes.swift */; };
+		OBJ_164 /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* Socket+File.swift */; };
+		OBJ_165 /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Socket+Server.swift */; };
+		OBJ_166 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* Socket.swift */; };
+		OBJ_167 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* String+BASE64.swift */; };
+		OBJ_168 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* String+File.swift */; };
+		OBJ_169 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* String+Misc.swift */; };
+		OBJ_170 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* String+SHA1.swift */; };
+		OBJ_171 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* WebSockets.swift */; };
+		OBJ_178 /* TensorBoxifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TensorBoxifyUITests.swift */; };
+		OBJ_180 /* TensorBoxifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TensorBoxify::TensorBoxifyUI::Product" /* TensorBoxifyUI.framework */; };
+		OBJ_181 /* FilesProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FilesProvider::FilesProvider::Product" /* FilesProvider.framework */; };
+		OBJ_182 /* TensorBoxify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */; };
+		OBJ_192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* AppDelegate.swift */; };
+		OBJ_193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* ViewController.swift */; };
+		OBJ_195 /* FilesProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FilesProvider::FilesProvider::Product" /* FilesProvider.framework */; };
+		OBJ_196 /* TensorBoxify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */; };
+		OBJ_203 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Document.swift */; };
+		OBJ_204 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Element.swift */; };
+		OBJ_205 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Error.swift */; };
+		OBJ_206 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Options.swift */; };
+		OBJ_207 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Parser.swift */; };
+		OBJ_208 /* CloudFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* CloudFileProvider.swift */; };
+		OBJ_209 /* DropboxFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* DropboxFileProvider.swift */; };
+		OBJ_210 /* DropboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* DropboxHelper.swift */; };
+		OBJ_211 /* ExtendedLocalFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ExtendedLocalFileProvider.swift */; };
+		OBJ_212 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* FoundationExtensions.swift */; };
+		OBJ_213 /* HashMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* HashMAC.swift */; };
+		OBJ_214 /* FPSStreamTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* FPSStreamTask.swift */; };
+		OBJ_215 /* FTPFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* FTPFileProvider.swift */; };
+		OBJ_216 /* FTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* FTPHelper.swift */; };
+		OBJ_217 /* FileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* FileObject.swift */; };
+		OBJ_218 /* FilesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* FilesProvider.swift */; };
+		OBJ_219 /* HTTPFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* HTTPFileProvider.swift */; };
+		OBJ_220 /* LocalFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* LocalFileProvider.swift */; };
+		OBJ_221 /* LocalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* LocalHelper.swift */; };
+		OBJ_222 /* OneDriveFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* OneDriveFileProvider.swift */; };
+		OBJ_223 /* OneDriveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* OneDriveHelper.swift */; };
+		OBJ_224 /* RemoteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* RemoteSession.swift */; };
+		OBJ_225 /* SMBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* SMBClient.swift */; };
+		OBJ_226 /* SMBFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* SMBFileProvider.swift */; };
+		OBJ_227 /* CIFSTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* CIFSTypes.swift */; };
+		OBJ_228 /* SMB2DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* SMB2DataTypes.swift */; };
+		OBJ_229 /* SMB2FileHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* SMB2FileHandle.swift */; };
+		OBJ_230 /* SMB2FileOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* SMB2FileOperation.swift */; };
+		OBJ_231 /* SMB2IOCtl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* SMB2IOCtl.swift */; };
+		OBJ_232 /* SMB2Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* SMB2Notification.swift */; };
+		OBJ_233 /* SMB2Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* SMB2Query.swift */; };
+		OBJ_234 /* SMB2QueryTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* SMB2QueryTypes.swift */; };
+		OBJ_235 /* SMB2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* SMB2Session.swift */; };
+		OBJ_236 /* SMB2SetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* SMB2SetInfo.swift */; };
+		OBJ_237 /* SMB2Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* SMB2Tree.swift */; };
+		OBJ_238 /* SMB2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* SMB2Types.swift */; };
+		OBJ_239 /* SMBErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* SMBErrorType.swift */; };
+		OBJ_240 /* WebDAVFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* WebDAVFileProvider.swift */; };
+		OBJ_246 /* GoogleDriveFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GoogleDriveFiler.swift */; };
+		OBJ_247 /* LocalFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LocalFiler.swift */; };
+		OBJ_248 /* WebFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WebFiler.swift */; };
+		OBJ_249 /* TBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TBImage.swift */; };
+		OBJ_250 /* LBVOCJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* LBVOCJSONParser.swift */; };
+		OBJ_251 /* LBVOCXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* LBVOCXMLParser.swift */; };
+		OBJ_252 /* TensorBoxParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* TensorBoxParser.swift */; };
+		OBJ_253 /* VOCParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* VOCParser.swift */; };
+		OBJ_254 /* VisualObjectClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* VisualObjectClass.swift */; };
+		OBJ_255 /* XMLDictionaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XMLDictionaryParser.swift */; };
+		OBJ_256 /* TensorBoxify.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* TensorBoxify.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95354D111FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "FilesProvider::FilesProvider";
+			remoteInfo = FilesProvider;
+		};
+		95354D121FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxify";
+			remoteInfo = TensorBoxify;
+		};
+		95354D131FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Swifter::Swifter";
+			remoteInfo = Swifter;
+		};
+		95354D141FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxify";
+			remoteInfo = TensorBoxify;
+		};
+		95354D151FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxifyUI";
+			remoteInfo = TensorBoxifyUI;
+		};
+		95354D161FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "FilesProvider::FilesProvider";
+			remoteInfo = FilesProvider;
+		};
+		95354D171FE04A4400864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxify";
+			remoteInfo = TensorBoxify;
+		};
+		95354D181FE04A4600864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxifyUITests";
+			remoteInfo = TensorBoxifyUITests;
+		};
+		95354D191FE04A4600864349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "TensorBoxify::TensorBoxifyTests";
+			remoteInfo = TensorBoxifyTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95354D1A1FE04A8B00864349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95354D1B1FE04A8B00864349 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		95354D1C1FE04A8C00864349 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95354D281FE04DA900864349 /* LocalFilerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilerTest.swift; sourceTree = "<group>"; };
+		"FilesProvider::FilesProvider::Product" /* FilesProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FilesProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* GoogleDriveFiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveFiler.swift; sourceTree = "<group>"; };
+		OBJ_100 /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		OBJ_101 /* String+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		OBJ_102 /* String+SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		OBJ_103 /* WebSockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+		OBJ_11 /* LocalFiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFiler.swift; sourceTree = "<group>"; };
+		OBJ_12 /* WebFiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFiler.swift; sourceTree = "<group>"; };
+		OBJ_14 /* TBImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBImage.swift; sourceTree = "<group>"; };
+		OBJ_16 /* LBVOCJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBVOCJSONParser.swift; sourceTree = "<group>"; };
+		OBJ_17 /* LBVOCXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBVOCXMLParser.swift; sourceTree = "<group>"; };
+		OBJ_18 /* TensorBoxParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorBoxParser.swift; sourceTree = "<group>"; };
+		OBJ_19 /* VOCParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOCParser.swift; sourceTree = "<group>"; };
+		OBJ_20 /* VisualObjectClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualObjectClass.swift; sourceTree = "<group>"; };
+		OBJ_21 /* XMLDictionaryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDictionaryParser.swift; sourceTree = "<group>"; };
+		OBJ_22 /* TensorBoxify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorBoxify.swift; sourceTree = "<group>"; };
+		OBJ_24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		OBJ_25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		OBJ_28 /* TensorBoxifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorBoxifyUITests.swift; sourceTree = "<group>"; };
+		OBJ_30 /* FileProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderTest.swift; sourceTree = "<group>"; };
+		OBJ_31 /* HttpServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServerManager.swift; sourceTree = "<group>"; };
+		OBJ_32 /* HttpServerManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServerManagerTest.swift; sourceTree = "<group>"; };
+		OBJ_33 /* LBVOCJSONParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBVOCJSONParserTest.swift; sourceTree = "<group>"; };
+		OBJ_34 /* LBVOCXMLParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBVOCXMLParserTest.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		OBJ_36 /* TensorBoxParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorBoxParserTest.swift; sourceTree = "<group>"; };
+		OBJ_37 /* TensorBoxifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorBoxifyTests.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		OBJ_47 /* CloudFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_48 /* DropboxFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_49 /* DropboxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxHelper.swift; sourceTree = "<group>"; };
+		OBJ_50 /* ExtendedLocalFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedLocalFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_52 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		OBJ_53 /* HashMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMAC.swift; sourceTree = "<group>"; };
+		OBJ_54 /* FPSStreamTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSStreamTask.swift; sourceTree = "<group>"; };
+		OBJ_55 /* FTPFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_56 /* FTPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPHelper.swift; sourceTree = "<group>"; };
+		OBJ_57 /* FileObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileObject.swift; sourceTree = "<group>"; };
+		OBJ_58 /* FilesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesProvider.swift; sourceTree = "<group>"; };
+		OBJ_59 /* HTTPFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* LocalFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_61 /* LocalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHelper.swift; sourceTree = "<group>"; };
+		OBJ_62 /* OneDriveFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDriveFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_63 /* OneDriveHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDriveHelper.swift; sourceTree = "<group>"; };
+		OBJ_64 /* RemoteSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSession.swift; sourceTree = "<group>"; };
+		OBJ_65 /* SMBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMBClient.swift; sourceTree = "<group>"; };
+		OBJ_66 /* SMBFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMBFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_68 /* CIFSTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFSTypes.swift; sourceTree = "<group>"; };
+		OBJ_69 /* SMB2DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2DataTypes.swift; sourceTree = "<group>"; };
+		OBJ_70 /* SMB2FileHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2FileHandle.swift; sourceTree = "<group>"; };
+		OBJ_71 /* SMB2FileOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2FileOperation.swift; sourceTree = "<group>"; };
+		OBJ_72 /* SMB2IOCtl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2IOCtl.swift; sourceTree = "<group>"; };
+		OBJ_73 /* SMB2Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2Notification.swift; sourceTree = "<group>"; };
+		OBJ_74 /* SMB2Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2Query.swift; sourceTree = "<group>"; };
+		OBJ_75 /* SMB2QueryTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2QueryTypes.swift; sourceTree = "<group>"; };
+		OBJ_76 /* SMB2Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2Session.swift; sourceTree = "<group>"; };
+		OBJ_77 /* SMB2SetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2SetInfo.swift; sourceTree = "<group>"; };
+		OBJ_78 /* SMB2Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2Tree.swift; sourceTree = "<group>"; };
+		OBJ_79 /* SMB2Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMB2Types.swift; sourceTree = "<group>"; };
+		OBJ_80 /* SMBErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMBErrorType.swift; sourceTree = "<group>"; };
+		OBJ_81 /* WebDAVFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDAVFileProvider.swift; sourceTree = "<group>"; };
+		OBJ_82 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/dhushon/work/TensorBoxify/.build/checkouts/FilesProvider.git--4362208540833941553/Package.swift"; sourceTree = "<group>"; };
+		OBJ_84 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/dhushon/work/TensorBoxify/.build/checkouts/swifter.git--8814129713726061435/Package.swift"; sourceTree = "<group>"; };
+		OBJ_85 /* DemoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		OBJ_86 /* Errno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		OBJ_87 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		OBJ_88 /* HttpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		OBJ_89 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		OBJ_90 /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		OBJ_91 /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		OBJ_92 /* HttpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		OBJ_93 /* HttpServerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		OBJ_94 /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		OBJ_95 /* Scopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		OBJ_96 /* Socket+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		OBJ_97 /* Socket+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		OBJ_98 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_99 /* String+BASE64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		"Swifter::Swifter::Product" /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorBoxify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TensorBoxify::TensorBoxifyTests::Product" /* TensorBoxifyTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = TensorBoxifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TensorBoxify::TensorBoxifyUI::Product" /* TensorBoxifyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorBoxifyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TensorBoxify::TensorBoxifyUITests::Product" /* TensorBoxifyUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = TensorBoxifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_143 /* Swifter.framework in Frameworks */,
+				OBJ_144 /* TensorBoxify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_180 /* TensorBoxifyUI.framework in Frameworks */,
+				OBJ_181 /* FilesProvider.framework in Frameworks */,
+				OBJ_182 /* TensorBoxify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_195 /* FilesProvider.framework in Frameworks */,
+				OBJ_196 /* TensorBoxify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"TensorBoxify::TensorBoxifyTests::Product" /* TensorBoxifyTests.xctest */,
+				"Swifter::Swifter::Product" /* Swifter.framework */,
+				"TensorBoxify::TensorBoxifyUITests::Product" /* TensorBoxifyUITests.xctest */,
+				"TensorBoxify::TensorBoxifyUI::Product" /* TensorBoxifyUI.framework */,
+				"FilesProvider::FilesProvider::Product" /* FilesProvider.framework */,
+				"TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_13 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* TBImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* LBVOCJSONParser.swift */,
+				OBJ_17 /* LBVOCXMLParser.swift */,
+				OBJ_18 /* TensorBoxParser.swift */,
+				OBJ_19 /* VOCParser.swift */,
+				OBJ_20 /* VisualObjectClass.swift */,
+				OBJ_21 /* XMLDictionaryParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* TensorBoxifyUI */ = {
+			isa = PBXGroup;
+			children = (
+				95354D1A1FE04A8B00864349 /* Assets.xcassets */,
+				95354D1B1FE04A8B00864349 /* Base.lproj */,
+				95354D1C1FE04A8C00864349 /* Info.plist */,
+				OBJ_24 /* AppDelegate.swift */,
+				OBJ_25 /* ViewController.swift */,
+			);
+			name = TensorBoxifyUI;
+			path = Sources/TensorBoxifyUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* TensorBoxifyUITests */,
+				OBJ_29 /* TensorBoxifyTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_27 /* TensorBoxifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* TensorBoxifyUITests.swift */,
+			);
+			name = TensorBoxifyUITests;
+			path = Tests/TensorBoxifyUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_29 /* TensorBoxifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* FileProviderTest.swift */,
+				OBJ_31 /* HttpServerManager.swift */,
+				OBJ_32 /* HttpServerManagerTest.swift */,
+				OBJ_33 /* LBVOCJSONParserTest.swift */,
+				OBJ_34 /* LBVOCXMLParserTest.swift */,
+				OBJ_35 /* Resource.swift */,
+				OBJ_36 /* TensorBoxParserTest.swift */,
+				OBJ_37 /* TensorBoxifyTests.swift */,
+				95354D281FE04DA900864349 /* LocalFilerTest.swift */,
+			);
+			name = TensorBoxifyTests;
+			path = Tests/TensorBoxifyTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_38 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* FilesProvider */,
+				OBJ_83 /* Swifter */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_39 /* FilesProvider */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* FilesProvider */,
+				OBJ_82 /* Package.swift */,
+			);
+			name = FilesProvider;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* FilesProvider */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* AEXML */,
+				OBJ_47 /* CloudFileProvider.swift */,
+				OBJ_48 /* DropboxFileProvider.swift */,
+				OBJ_49 /* DropboxHelper.swift */,
+				OBJ_50 /* ExtendedLocalFileProvider.swift */,
+				OBJ_51 /* Extensions */,
+				OBJ_54 /* FPSStreamTask.swift */,
+				OBJ_55 /* FTPFileProvider.swift */,
+				OBJ_56 /* FTPHelper.swift */,
+				OBJ_57 /* FileObject.swift */,
+				OBJ_58 /* FilesProvider.swift */,
+				OBJ_59 /* HTTPFileProvider.swift */,
+				OBJ_60 /* LocalFileProvider.swift */,
+				OBJ_61 /* LocalHelper.swift */,
+				OBJ_62 /* OneDriveFileProvider.swift */,
+				OBJ_63 /* OneDriveHelper.swift */,
+				OBJ_64 /* RemoteSession.swift */,
+				OBJ_65 /* SMBClient.swift */,
+				OBJ_66 /* SMBFileProvider.swift */,
+				OBJ_67 /* SMBTypes */,
+				OBJ_81 /* WebDAVFileProvider.swift */,
+			);
+			name = FilesProvider;
+			path = ".build/checkouts/FilesProvider.git--4362208540833941553/Sources/FilesProvider";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Document.swift */,
+				OBJ_43 /* Element.swift */,
+				OBJ_44 /* Error.swift */,
+				OBJ_45 /* Options.swift */,
+				OBJ_46 /* Parser.swift */,
+			);
+			path = AEXML;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_26 /* Tests */,
+				OBJ_38 /* Dependencies */,
+				OBJ_104 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* FoundationExtensions.swift */,
+				OBJ_53 /* HashMAC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_67 /* SMBTypes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_68 /* CIFSTypes.swift */,
+				OBJ_69 /* SMB2DataTypes.swift */,
+				OBJ_70 /* SMB2FileHandle.swift */,
+				OBJ_71 /* SMB2FileOperation.swift */,
+				OBJ_72 /* SMB2IOCtl.swift */,
+				OBJ_73 /* SMB2Notification.swift */,
+				OBJ_74 /* SMB2Query.swift */,
+				OBJ_75 /* SMB2QueryTypes.swift */,
+				OBJ_76 /* SMB2Session.swift */,
+				OBJ_77 /* SMB2SetInfo.swift */,
+				OBJ_78 /* SMB2Tree.swift */,
+				OBJ_79 /* SMB2Types.swift */,
+				OBJ_80 /* SMBErrorType.swift */,
+			);
+			path = SMBTypes;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* TensorBoxify */,
+				OBJ_23 /* TensorBoxifyUI */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* TensorBoxify */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* FileServices */,
+				OBJ_13 /* Image */,
+				OBJ_15 /* Parsers */,
+				OBJ_22 /* TensorBoxify.swift */,
+			);
+			name = TensorBoxify;
+			path = Sources/TensorBoxify;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_83 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_84 /* Package.swift */,
+				OBJ_85 /* DemoServer.swift */,
+				OBJ_86 /* Errno.swift */,
+				OBJ_87 /* Files.swift */,
+				OBJ_88 /* HttpParser.swift */,
+				OBJ_89 /* HttpRequest.swift */,
+				OBJ_90 /* HttpResponse.swift */,
+				OBJ_91 /* HttpRouter.swift */,
+				OBJ_92 /* HttpServer.swift */,
+				OBJ_93 /* HttpServerIO.swift */,
+				OBJ_94 /* Process.swift */,
+				OBJ_95 /* Scopes.swift */,
+				OBJ_96 /* Socket+File.swift */,
+				OBJ_97 /* Socket+Server.swift */,
+				OBJ_98 /* Socket.swift */,
+				OBJ_99 /* String+BASE64.swift */,
+				OBJ_100 /* String+File.swift */,
+				OBJ_101 /* String+Misc.swift */,
+				OBJ_102 /* String+SHA1.swift */,
+				OBJ_103 /* WebSockets.swift */,
+			);
+			name = Swifter;
+			path = ".build/checkouts/swifter.git--8814129713726061435/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* FileServices */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* GoogleDriveFiler.swift */,
+				OBJ_11 /* LocalFiler.swift */,
+				OBJ_12 /* WebFiler.swift */,
+			);
+			path = FileServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"FilesProvider::FilesProvider" /* FilesProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_199 /* Build configuration list for PBXNativeTarget "FilesProvider" */;
+			buildPhases = (
+				OBJ_202 /* Sources */,
+				OBJ_241 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilesProvider;
+			productName = FilesProvider;
+			productReference = "FilesProvider::FilesProvider::Product" /* FilesProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"FilesProvider::SwiftPMPackageDescription" /* FilesProviderPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_118 /* Build configuration list for PBXNativeTarget "FilesProviderPackageDescription" */;
+			buildPhases = (
+				OBJ_121 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilesProviderPackageDescription;
+			productName = FilesProviderPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Swifter::SwiftPMPackageDescription" /* SwifterPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_124 /* Build configuration list for PBXNativeTarget "SwifterPackageDescription" */;
+			buildPhases = (
+				OBJ_127 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifterPackageDescription;
+			productName = SwifterPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Swifter::Swifter" /* Swifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "Swifter" */;
+			buildPhases = (
+				OBJ_152 /* Sources */,
+				OBJ_172 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			productName = Swifter;
+			productReference = "Swifter::Swifter::Product" /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"TensorBoxify::SwiftPMPackageDescription" /* TensorBoxifyPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "TensorBoxifyPackageDescription" */;
+			buildPhases = (
+				OBJ_115 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TensorBoxifyPackageDescription;
+			productName = TensorBoxifyPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"TensorBoxify::TensorBoxify" /* TensorBoxify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_242 /* Build configuration list for PBXNativeTarget "TensorBoxify" */;
+			buildPhases = (
+				OBJ_245 /* Sources */,
+				OBJ_257 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TensorBoxify;
+			productName = TensorBoxify;
+			productReference = "TensorBoxify::TensorBoxify::Product" /* TensorBoxify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"TensorBoxify::TensorBoxifyTests" /* TensorBoxifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_130 /* Build configuration list for PBXNativeTarget "TensorBoxifyTests" */;
+			buildPhases = (
+				OBJ_133 /* Sources */,
+				OBJ_142 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_145 /* PBXTargetDependency */,
+				OBJ_147 /* PBXTargetDependency */,
+			);
+			name = TensorBoxifyTests;
+			productName = TensorBoxifyTests;
+			productReference = "TensorBoxify::TensorBoxifyTests::Product" /* TensorBoxifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"TensorBoxify::TensorBoxifyUI" /* TensorBoxifyUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_188 /* Build configuration list for PBXNativeTarget "TensorBoxifyUI" */;
+			buildPhases = (
+				OBJ_191 /* Sources */,
+				OBJ_194 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_197 /* PBXTargetDependency */,
+				OBJ_198 /* PBXTargetDependency */,
+			);
+			name = TensorBoxifyUI;
+			productName = TensorBoxifyUI;
+			productReference = "TensorBoxify::TensorBoxifyUI::Product" /* TensorBoxifyUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"TensorBoxify::TensorBoxifyUITests" /* TensorBoxifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_174 /* Build configuration list for PBXNativeTarget "TensorBoxifyUITests" */;
+			buildPhases = (
+				OBJ_177 /* Sources */,
+				OBJ_179 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_183 /* PBXTargetDependency */,
+				OBJ_185 /* PBXTargetDependency */,
+				OBJ_187 /* PBXTargetDependency */,
+			);
+			name = TensorBoxifyUITests;
+			productName = TensorBoxifyUITests;
+			productReference = "TensorBoxify::TensorBoxifyUITests::Product" /* TensorBoxifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "TensorBoxify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"TensorBoxify::SwiftPMPackageDescription" /* TensorBoxifyPackageDescription */,
+				"FilesProvider::SwiftPMPackageDescription" /* FilesProviderPackageDescription */,
+				"Swifter::SwiftPMPackageDescription" /* SwifterPackageDescription */,
+				"TensorBoxify::TensorBoxifyTests" /* TensorBoxifyTests */,
+				"Swifter::Swifter" /* Swifter */,
+				"TensorBoxify::TensorBoxifyUITests" /* TensorBoxifyUITests */,
+				"TensorBoxify::TensorBoxifyUI" /* TensorBoxifyUI */,
+				"FilesProvider::FilesProvider" /* FilesProvider */,
+				"TensorBoxify::TensorBoxify" /* TensorBoxify */,
+				"TensorBoxify::TensorBoxifyPackageTests::ProductTarget" /* TensorBoxifyPackageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				95354D291FE04DA900864349 /* LocalFilerTest.swift in Sources */,
+				OBJ_116 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_122 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_128 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_134 /* FileProviderTest.swift in Sources */,
+				OBJ_135 /* HttpServerManager.swift in Sources */,
+				95354D1E1FE04CC300864349 /* LBVOCJSONParser.swift in Sources */,
+				OBJ_136 /* HttpServerManagerTest.swift in Sources */,
+				OBJ_137 /* LBVOCJSONParserTest.swift in Sources */,
+				95354D221FE04CC300864349 /* VisualObjectClass.swift in Sources */,
+				95354D201FE04CC300864349 /* TensorBoxParser.swift in Sources */,
+				OBJ_138 /* LBVOCXMLParserTest.swift in Sources */,
+				95354D211FE04CC300864349 /* VOCParser.swift in Sources */,
+				OBJ_139 /* Resource.swift in Sources */,
+				95354D2A1FE04DA900864349 /* LocalFilerTest.swift in Sources */,
+				95354D261FE04CD300864349 /* LocalFiler.swift in Sources */,
+				95354D251FE04CD300864349 /* GoogleDriveFiler.swift in Sources */,
+				OBJ_140 /* TensorBoxParserTest.swift in Sources */,
+				OBJ_141 /* TensorBoxifyTests.swift in Sources */,
+				95354D231FE04CC300864349 /* XMLDictionaryParser.swift in Sources */,
+				95354D271FE04CD300864349 /* WebFiler.swift in Sources */,
+				95354D241FE04CCC00864349 /* TBImage.swift in Sources */,
+				95354D1F1FE04CC300864349 /* LBVOCXMLParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_153 /* DemoServer.swift in Sources */,
+				OBJ_154 /* Errno.swift in Sources */,
+				OBJ_155 /* Files.swift in Sources */,
+				OBJ_156 /* HttpParser.swift in Sources */,
+				OBJ_157 /* HttpRequest.swift in Sources */,
+				OBJ_158 /* HttpResponse.swift in Sources */,
+				OBJ_159 /* HttpRouter.swift in Sources */,
+				OBJ_160 /* HttpServer.swift in Sources */,
+				OBJ_161 /* HttpServerIO.swift in Sources */,
+				OBJ_162 /* Process.swift in Sources */,
+				OBJ_163 /* Scopes.swift in Sources */,
+				OBJ_164 /* Socket+File.swift in Sources */,
+				OBJ_165 /* Socket+Server.swift in Sources */,
+				OBJ_166 /* Socket.swift in Sources */,
+				OBJ_167 /* String+BASE64.swift in Sources */,
+				OBJ_168 /* String+File.swift in Sources */,
+				OBJ_169 /* String+Misc.swift in Sources */,
+				OBJ_170 /* String+SHA1.swift in Sources */,
+				OBJ_171 /* WebSockets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				95354D1D1FE04CB800864349 /* ViewController.swift in Sources */,
+				OBJ_178 /* TensorBoxifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_192 /* AppDelegate.swift in Sources */,
+				OBJ_193 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_203 /* Document.swift in Sources */,
+				OBJ_204 /* Element.swift in Sources */,
+				OBJ_205 /* Error.swift in Sources */,
+				OBJ_206 /* Options.swift in Sources */,
+				OBJ_207 /* Parser.swift in Sources */,
+				OBJ_208 /* CloudFileProvider.swift in Sources */,
+				OBJ_209 /* DropboxFileProvider.swift in Sources */,
+				OBJ_210 /* DropboxHelper.swift in Sources */,
+				OBJ_211 /* ExtendedLocalFileProvider.swift in Sources */,
+				OBJ_212 /* FoundationExtensions.swift in Sources */,
+				OBJ_213 /* HashMAC.swift in Sources */,
+				OBJ_214 /* FPSStreamTask.swift in Sources */,
+				OBJ_215 /* FTPFileProvider.swift in Sources */,
+				OBJ_216 /* FTPHelper.swift in Sources */,
+				OBJ_217 /* FileObject.swift in Sources */,
+				OBJ_218 /* FilesProvider.swift in Sources */,
+				OBJ_219 /* HTTPFileProvider.swift in Sources */,
+				OBJ_220 /* LocalFileProvider.swift in Sources */,
+				OBJ_221 /* LocalHelper.swift in Sources */,
+				OBJ_222 /* OneDriveFileProvider.swift in Sources */,
+				OBJ_223 /* OneDriveHelper.swift in Sources */,
+				OBJ_224 /* RemoteSession.swift in Sources */,
+				OBJ_225 /* SMBClient.swift in Sources */,
+				OBJ_226 /* SMBFileProvider.swift in Sources */,
+				OBJ_227 /* CIFSTypes.swift in Sources */,
+				OBJ_228 /* SMB2DataTypes.swift in Sources */,
+				OBJ_229 /* SMB2FileHandle.swift in Sources */,
+				OBJ_230 /* SMB2FileOperation.swift in Sources */,
+				OBJ_231 /* SMB2IOCtl.swift in Sources */,
+				OBJ_232 /* SMB2Notification.swift in Sources */,
+				OBJ_233 /* SMB2Query.swift in Sources */,
+				OBJ_234 /* SMB2QueryTypes.swift in Sources */,
+				OBJ_235 /* SMB2Session.swift in Sources */,
+				OBJ_236 /* SMB2SetInfo.swift in Sources */,
+				OBJ_237 /* SMB2Tree.swift in Sources */,
+				OBJ_238 /* SMB2Types.swift in Sources */,
+				OBJ_239 /* SMBErrorType.swift in Sources */,
+				OBJ_240 /* WebDAVFileProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_246 /* GoogleDriveFiler.swift in Sources */,
+				OBJ_247 /* LocalFiler.swift in Sources */,
+				OBJ_248 /* WebFiler.swift in Sources */,
+				OBJ_249 /* TBImage.swift in Sources */,
+				OBJ_250 /* LBVOCJSONParser.swift in Sources */,
+				OBJ_251 /* LBVOCXMLParser.swift in Sources */,
+				OBJ_252 /* TensorBoxParser.swift in Sources */,
+				OBJ_253 /* VOCParser.swift in Sources */,
+				OBJ_254 /* VisualObjectClass.swift in Sources */,
+				OBJ_255 /* XMLDictionaryParser.swift in Sources */,
+				OBJ_256 /* TensorBoxify.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Swifter::Swifter" /* Swifter */;
+			targetProxy = 95354D131FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxify" /* TensorBoxify */;
+			targetProxy = 95354D141FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxifyUI" /* TensorBoxifyUI */;
+			targetProxy = 95354D151FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "FilesProvider::FilesProvider" /* FilesProvider */;
+			targetProxy = 95354D161FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxify" /* TensorBoxify */;
+			targetProxy = 95354D171FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "FilesProvider::FilesProvider" /* FilesProvider */;
+			targetProxy = 95354D111FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxify" /* TensorBoxify */;
+			targetProxy = 95354D121FE04A4400864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxifyUITests" /* TensorBoxifyUITests */;
+			targetProxy = 95354D181FE04A4600864349 /* PBXContainerItemProxy */;
+		};
+		OBJ_263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "TensorBoxify::TensorBoxifyTests" /* TensorBoxifyTests */;
+			targetProxy = 95354D191FE04A4600864349 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyTests;
+			};
+			name = Debug;
+		};
+		OBJ_132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyTests;
+			};
+			name = Release;
+		};
+		OBJ_150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/Swifter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Swifter;
+			};
+			name = Debug;
+		};
+		OBJ_151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/Swifter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Swifter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Swifter;
+			};
+			name = Release;
+		};
+		OBJ_175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyUITests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyUITests;
+			};
+			name = Debug;
+		};
+		OBJ_176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyUITests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyUITests;
+			};
+			name = Release;
+		};
+		OBJ_189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyUI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TensorBoxifyUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyUI;
+			};
+			name = Debug;
+		};
+		OBJ_190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxifyUI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TensorBoxifyUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxifyUI;
+			};
+			name = Release;
+		};
+		OBJ_200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/FilesProvider_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FilesProvider;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = FilesProvider;
+			};
+			name = Debug;
+		};
+		OBJ_201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/FilesProvider_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FilesProvider;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = FilesProvider;
+			};
+			name = Release;
+		};
+		OBJ_243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxify_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TensorBoxify;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxify;
+			};
+			name = Debug;
+		};
+		OBJ_244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TensorBoxify.xcodeproj/TensorBoxify_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TensorBoxify;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = TensorBoxify;
+			};
+			name = Release;
+		};
+		OBJ_260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_112 /* Build configuration list for PBXNativeTarget "TensorBoxifyPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_118 /* Build configuration list for PBXNativeTarget "FilesProviderPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_119 /* Debug */,
+				OBJ_120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_124 /* Build configuration list for PBXNativeTarget "SwifterPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_125 /* Debug */,
+				OBJ_126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_130 /* Build configuration list for PBXNativeTarget "TensorBoxifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_131 /* Debug */,
+				OBJ_132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_149 /* Build configuration list for PBXNativeTarget "Swifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_174 /* Build configuration list for PBXNativeTarget "TensorBoxifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_175 /* Debug */,
+				OBJ_176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_188 /* Build configuration list for PBXNativeTarget "TensorBoxifyUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_189 /* Debug */,
+				OBJ_190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_199 /* Build configuration list for PBXNativeTarget "FilesProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_200 /* Debug */,
+				OBJ_201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "TensorBoxify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_242 /* Build configuration list for PBXNativeTarget "TensorBoxify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_243 /* Debug */,
+				OBJ_244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_259 /* Build configuration list for PBXAggregateTarget "TensorBoxifyPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_260 /* Debug */,
+				OBJ_261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

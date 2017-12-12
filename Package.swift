@@ -10,12 +10,15 @@ let package = Package(
         .library(
             name: "TensorBoxify",
             targets: ["TensorBoxify"]),
+        .executable(
+            name: "TensorBoxifyUI",
+            targets: ["TensorBoxifyUI"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0",
     .package(url: "https://github.com/httpswift/swifter.git", .branch("stable")),
-    .package(url: "https://github.com/amosavian/FileProvider.git", from: "0.0.0")
+    .package(url: "https://github.com/dhushon/FilesProvider.git", .branch("master"))
 
     ],
     targets: [
@@ -24,8 +27,14 @@ let package = Package(
         .target(
             name: "TensorBoxify",
             dependencies: []),
+        .target(
+            name: "TensorBoxifyUI",
+            dependencies: ["FilesProvider","TensorBoxify"]),
         .testTarget(
             name: "TensorBoxifyTests",
             dependencies: ["TensorBoxify","Swifter"]),
+        .testTarget(
+            name: "TensorBoxifyUITests",
+            dependencies: ["TensorBoxifyUI"])
     ]
 )
