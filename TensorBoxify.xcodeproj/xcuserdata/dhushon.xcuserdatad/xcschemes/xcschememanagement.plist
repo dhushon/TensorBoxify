@@ -7,7 +7,7 @@
 		<key>FilesProviderPackageDescription.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>SwifterPackageDescription.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>TensorBoxifyPackageDescription.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>TensorBoxifyPackageTests.xcscheme</key>
 		<dict>

@@ -9,7 +9,9 @@ import Foundation
 //import FilesProvider
 
 @available(OSX 10.12, *)
-class LocalFiler {
+class LocalFiler : TBFiler {
+
+    
     var dirDictionary : [String:URL] = [:]
     let home = "HOME"
     let apps = "APPS"
@@ -35,17 +37,13 @@ class LocalFiler {
     public func setNamedDirectory(key: String, dir: URL, createIfNotExists: Bool) throws {
         // Get Default FileManager
         let fileManager = FileManager.default
-        let exists = (fileManager.fileExists(atPath: dir.absoluteString))
-        // test directory progression and create on the way
-        let host = dir.host
-        dir.pathComponents.forEach { component in
-            let exists = fileManager.fileExists(atPath: component)
-            
+        if !(fileManager.fileExists(atPath: dir.absoluteString)) {
+            try fileManager.createDirectory(at: dir, withIntermediateDirectories: createIfNotExists, attributes: nil)
+            dirDictionary.updateValue(dir, forKey: key)
         }
-        debugPrint(exists)
     }
     
-    func urlForDataStorage(filename: String?) -> URL? {
+    func urlForAppStorage(filename: String?) -> URL? {
         if (dirDictionary[apps] == nil)  {
             // Get Default FileManager
             let fileManager = FileManager.default
@@ -80,5 +78,15 @@ class LocalFiler {
         }
         return dirDictionary[apps]
     }
+    
+    func fetch(url: URL) throws -> Data? {
+        return nil
+    }
+    
+    func fetchAsync(url: URL, completion: @escaping URLCompletionHandler) {
+        return
+    }
+    
+
 }
 

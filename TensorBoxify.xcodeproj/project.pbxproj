@@ -30,11 +30,14 @@
 		95354D221FE04CC300864349 /* VisualObjectClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* VisualObjectClass.swift */; };
 		95354D231FE04CC300864349 /* XMLDictionaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XMLDictionaryParser.swift */; };
 		95354D241FE04CCC00864349 /* TBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TBImage.swift */; };
-		95354D251FE04CD300864349 /* GoogleDriveFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GoogleDriveFiler.swift */; };
 		95354D261FE04CD300864349 /* LocalFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LocalFiler.swift */; };
 		95354D271FE04CD300864349 /* WebFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WebFiler.swift */; };
 		95354D291FE04DA900864349 /* LocalFilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95354D281FE04DA900864349 /* LocalFilerTest.swift */; };
 		95354D2A1FE04DA900864349 /* LocalFilerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95354D281FE04DA900864349 /* LocalFilerTest.swift */; };
+		95FE15A31FE17FBA004346DA /* WebFilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE15A21FE17FBA004346DA /* WebFilerTests.swift */; };
+		95FE15A41FE17FBA004346DA /* WebFilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE15A21FE17FBA004346DA /* WebFilerTests.swift */; };
+		95FE15A61FE18310004346DA /* TBFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE15A51FE18310004346DA /* TBFiler.swift */; };
+		95FE15A71FE18310004346DA /* TBFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE15A51FE18310004346DA /* TBFiler.swift */; };
 		OBJ_116 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_122 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Package.swift */; };
 		OBJ_128 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* Package.swift */; };
@@ -113,7 +116,6 @@
 		OBJ_238 /* SMB2Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* SMB2Types.swift */; };
 		OBJ_239 /* SMBErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* SMBErrorType.swift */; };
 		OBJ_240 /* WebDAVFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* WebDAVFileProvider.swift */; };
-		OBJ_246 /* GoogleDriveFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GoogleDriveFiler.swift */; };
 		OBJ_247 /* LocalFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LocalFiler.swift */; };
 		OBJ_248 /* WebFiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WebFiler.swift */; };
 		OBJ_249 /* TBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TBImage.swift */; };
@@ -197,8 +199,9 @@
 		95354D1B1FE04A8B00864349 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		95354D1C1FE04A8C00864349 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95354D281FE04DA900864349 /* LocalFilerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilerTest.swift; sourceTree = "<group>"; };
+		95FE15A21FE17FBA004346DA /* WebFilerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilerTests.swift; sourceTree = "<group>"; };
+		95FE15A51FE18310004346DA /* TBFiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBFiler.swift; sourceTree = "<group>"; };
 		"FilesProvider::FilesProvider::Product" /* FilesProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FilesProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* GoogleDriveFiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveFiler.swift; sourceTree = "<group>"; };
 		OBJ_100 /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
 		OBJ_101 /* String+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
 		OBJ_102 /* String+SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
@@ -417,6 +420,7 @@
 				OBJ_36 /* TensorBoxParserTest.swift */,
 				OBJ_37 /* TensorBoxifyTests.swift */,
 				95354D281FE04DA900864349 /* LocalFilerTest.swift */,
+				95FE15A21FE17FBA004346DA /* WebFilerTests.swift */,
 			);
 			name = TensorBoxifyTests;
 			path = Tests/TensorBoxifyTests;
@@ -481,7 +485,7 @@
 			path = AEXML;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -490,7 +494,6 @@
 				OBJ_38 /* Dependencies */,
 				OBJ_104 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* Extensions */ = {
@@ -574,9 +577,9 @@
 		OBJ_9 /* FileServices */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* GoogleDriveFiler.swift */,
 				OBJ_11 /* LocalFiler.swift */,
 				OBJ_12 /* WebFiler.swift */,
+				95FE15A51FE18310004346DA /* TBFiler.swift */,
 			);
 			path = FileServices;
 			sourceTree = "<group>";
@@ -744,7 +747,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_104 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -768,6 +771,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				95FE15A61FE18310004346DA /* TBFiler.swift in Sources */,
+				95FE15A31FE17FBA004346DA /* WebFilerTests.swift in Sources */,
 				95354D291FE04DA900864349 /* LocalFilerTest.swift in Sources */,
 				OBJ_116 /* Package.swift in Sources */,
 			);
@@ -805,11 +810,12 @@
 				OBJ_139 /* Resource.swift in Sources */,
 				95354D2A1FE04DA900864349 /* LocalFilerTest.swift in Sources */,
 				95354D261FE04CD300864349 /* LocalFiler.swift in Sources */,
-				95354D251FE04CD300864349 /* GoogleDriveFiler.swift in Sources */,
 				OBJ_140 /* TensorBoxParserTest.swift in Sources */,
 				OBJ_141 /* TensorBoxifyTests.swift in Sources */,
 				95354D231FE04CC300864349 /* XMLDictionaryParser.swift in Sources */,
 				95354D271FE04CD300864349 /* WebFiler.swift in Sources */,
+				95FE15A71FE18310004346DA /* TBFiler.swift in Sources */,
+				95FE15A41FE17FBA004346DA /* WebFilerTests.swift in Sources */,
 				95354D241FE04CCC00864349 /* TBImage.swift in Sources */,
 				95354D1F1FE04CC300864349 /* LBVOCXMLParser.swift in Sources */,
 			);
@@ -908,7 +914,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_246 /* GoogleDriveFiler.swift in Sources */,
 				OBJ_247 /* LocalFiler.swift in Sources */,
 				OBJ_248 /* WebFiler.swift in Sources */,
 				OBJ_249 /* TBImage.swift in Sources */,

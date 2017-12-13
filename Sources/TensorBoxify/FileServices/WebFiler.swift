@@ -29,13 +29,11 @@ public extension Data {
     }
 }
 
-class WebFiler {
+class WebFiler : TBFiler {
     
-    typealias URLCompletionHandler = (_ response: Int, _ data: Data?) -> Void
-    
-    public func fetchWebFile(url: URL) -> Data? {
+    public func fetch(url: URL) -> Data? {
         var idata : Data?
-        WebFiler.fetchWebFileAsync(url: url) { response, data in
+        WebFiler.fetchAsync(url: url) { response, data in
             print("tried to fetch: \(url.absoluteString) response: \(response)\n")
             print("data")
             idata = data
@@ -43,7 +41,7 @@ class WebFiler {
         return idata
     }
     
-    public static func fetchWebFileAsync(url: URL, completion: @escaping URLCompletionHandler) {
+    public static func fetchAsync(url: URL, completion: @escaping URLCompletionHandler) {
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let request = URLRequest(url: url)
